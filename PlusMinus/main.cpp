@@ -6,8 +6,19 @@ vector<string> split_string(string);
 
 // Complete the plusMinus function below.
 void plusMinus(vector<int> arr) {
-
-
+    int n = arr.size(), negative = 0, positive = 0, zero = 0;
+    for (int i = 0; i < n; i++) {
+        if (arr[i] > 0) {
+            negative++;
+        } else if (arr[i] == 0) {
+            zero++;
+        } else if (arr[i] < 0) {
+            positive++;
+        }
+    }
+    cout << setprecision(6) << (float)negative / n << "\n";
+    cout << setprecision(6) << (float)positive / n << "\n";
+    cout << setprecision(6) << (float)zero / n << "\n";
 }
 
 int main()
