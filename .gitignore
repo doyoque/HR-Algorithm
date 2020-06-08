@@ -35,4 +35,4 @@
 # save-temps
 *.ii
 *.s
-bin/main
+**/bin/main
