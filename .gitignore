@@ -4,3 +4,4 @@
 *.ii
 *.s
 **/bin/main
+**/*.swp
