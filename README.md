@@ -16,7 +16,14 @@ g++ --version
 ## Compiling Assets
 
 ```bash
+# -Wall flag mean "turns on (almost) all warning that g++ can tell you about"
+# -std=c++0x flag mean "hey compiler, my source code contain some function that come from older features. Would you compile it using this flag?"
+# -save-temps mean Store the normally temporary intermediate files( *.s, *.i, *.o) permanently.
+# -o mean create executable file
 g++ -std=c++0x -Wall -save-temps main.cpp -o bin/main
+
+# without warning
+g++ -std=c++0x -save-temps main.cpp -o bin/main
 ```
 
 ## Run Binary
